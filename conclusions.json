@@ -1,10 +1,42 @@
 [
-    {
-        "name": "Mihai Eminescu",
-        "flags": ["real", "person"]
-    },
-    {
-        "name": "Ion Creanga",
-        "flags": ["person"]
-    }
+  {
+    "name": "Mihai Eminescu",
+    "flags": [
+      "Botosani",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Ion Creanga",
+    "flags": [
+      "Humulesti",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Ion Luca Caragiale",
+    "flags": [
+      "Haimanale",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Masa din lemn",
+    "flags": ["four legs", "wood", "object"]
+  }
 ]

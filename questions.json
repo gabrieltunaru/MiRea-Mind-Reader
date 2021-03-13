@@ -1,10 +1,67 @@
 [
-    {
-        "text": "It's a person?",
-        "flag": "person"
-    },
-    {
-        "text": "It's real?",
-        "flag": "real"
-    }
+  {
+    "text": "It's a person?",
+    "flag": "person",
+    "required": []
+  },
+  {
+    "text": "It's real?",
+    "flag": "real",
+    "required": ["person"]
+  },
+  {
+    "text": "It's alive?",
+    "flag": "alive",
+    "required": ["person", "real"]
+  },
+  {
+    "text": "It's a male?",
+    "flag": "male",
+    "required": ["person"]
+  },
+  {
+    "text": "It's romanian?",
+    "flag": "romanian",
+    "required": ["person"]
+  },
+  {
+    "text": "It's a writer?",
+    "flag": "writer",
+    "required": ["person"]
+  },
+  {
+    "text": "Has brown hair?",
+    "flag": "brown hair",
+    "required": ["person"]
+  },
+  {
+    "text": "Is born in Botosani?",
+    "flag": "Botosani",
+    "required": ["person"]
+  },
+  {
+    "text": "Is born in Humulesti?",
+    "flag": "Humulesti",
+    "required": ["person"]
+  },
+  {
+    "text": "Is born in Haimanale?",
+    "flag": "Haimanale",
+    "required": ["person"]
+  },
+  {
+    "text": "Is it an object?",
+    "flag": "object",
+    "required": []
+  },
+  {
+    "text": "Is it made from wood?",
+    "flag": "wood",
+    "required": ["object"]
+  },
+  {
+    "text": "Has it four legs?",
+    "flag": "four legs",
+    "required": ["object"]
+  }
 ]
