@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Mihai Eminescu",
+        "flags": ["real", "person"]
+    },
+    {
+        "name": "Ion Creanga",
+        "flags": ["person"]
+    }
+]

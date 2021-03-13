@@ -1,0 +1,10 @@
+[
+    {
+        "text": "It's a person?",
+        "flag": "person"
+    },
+    {
+        "text": "It's real?",
+        "flag": "real"
+    }
+]
