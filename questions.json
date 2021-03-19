@@ -37,17 +37,113 @@
   {
     "text": "Is born in Botosani?",
     "flag": "Botosani",
-    "required": ["person"]
+    "required": ["person", "romanian", "writer"]
   },
   {
     "text": "Is born in Humulesti?",
     "flag": "Humulesti",
-    "required": ["person"]
+    "required": ["person", "romanian", "writer"]
   },
   {
     "text": "Is born in Haimanale?",
     "flag": "Haimanale",
+    "required": ["person", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Bucuresti?",
+    "flag": "Bucuresti",
+    "required": ["person", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Ivesti?",
+    "flag": "Ivesti",
+    "required": ["person", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Barlad?",
+    "flag": "Barlad",
+    "required": ["person", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Praga?",
+    "flag": "Praga",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is born in Edinburgh?",
+    "flag": "Edinburgh",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is born in Maine?",
+    "flag": "Maine",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is born in Torquay?",
+    "flag": "Torquay",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is born in Steventon?",
+    "flag": "Steventon",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is born in Yate?",
+    "flag": "Yate",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is born in Kensington?",
+    "flag": "Kensington",
+    "required": ["person", "writer"]
+  },
+  {
+    "text": "Is it an actor?",
+    "flag": "actor",
     "required": ["person"]
+  },
+  { "text": "Has dark hair?", "flag": "dark hair", "required": ["person"] },
+  {
+    "text": "Is born in Ramnicu Valcea?",
+    "flag": "Ramnicu Valcea",
+    "required": ["person", "romanian", "actor"]
+  },
+  {
+    "text": "Is born in Techirghiol?",
+    "flag": "Techirghiol",
+    "required": ["person", "romanian", "actor"]
+  },
+  {
+    "text": "Is born in Targu Jiu?",
+    "flag": "Targu Jiu",
+    "required": ["person", "romanian", "actor"]
+  },
+  {
+    "text": "Is born in New York?",
+    "flag": "New York",
+    "required": ["person", "actor"]
+  },
+  {
+    "text": "Is born in London?",
+    "flag": "London",
+    "required": ["person", "actor"]
+  },
+  {
+    "text": "Is born in Paris?",
+    "flag": "Paris",
+    "required": ["person", "actor"]
+  },
+  {
+    "text": "Is born in Scottsdale?",
+    "flag": "Scottsdale",
+    "required": ["person", "actor"]
+  },
+  {
+    "text": "Is born in Paris?",
+    "flag": "Paris",
+    "required": ["person", "actor"]
   },
   {
     "text": "Is it an object?",

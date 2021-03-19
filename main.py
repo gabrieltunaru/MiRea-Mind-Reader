@@ -7,7 +7,7 @@ def get_knowledge_base():
     with open('questions.json', 'r') as q_file, open('conclusions.json', 'r') as c_file:
         questions = json.load(q_file)
         conclusions = json.load(c_file)
-    q2 = {x['flag']: {'text': x['text'], 'required': x['required']}
+    q2 = {x['flag']: {'text': x['text'], 'required': set(x['required'])}
           for x in questions}
     for c in conclusions:
         c['flags'] = set(c['flags'])
@@ -15,22 +15,19 @@ def get_knowledge_base():
 
 
 def can_ask_this_question(required_flags, flags):
-    for required_flag in required_flags:
-        if required_flag not in flags:
-            return False
-    return True
+    return True if len(required_flags - flags) == 0 else False
 
 
 def ask(conclusions, questions):
     partial_conclusion = conclusions
     remaining_questions = questions
-    flags = []
+    flags = set()
     for flag in remaining_questions:
         if not can_ask_this_question(remaining_questions[flag]['required'], flags):
             continue
         res = input(remaining_questions[flag]['text'] + " ")
         include = res == 'y'
-        flags += [flag] if include else []
+        flags.add(flag) if include else flags
         partial_conclusion = list(filter(lambda x: not (
             (flag in x['flags']) ^ include), partial_conclusion))
         remaining_conclusions = len(partial_conclusion)
