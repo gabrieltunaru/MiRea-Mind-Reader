@@ -18,16 +18,17 @@ def can_ask_this_question(required_flags, flags):
     return True if len(required_flags - flags) == 0 else False
 
 
-def ask(conclusions, questions):
+def ask(conclusions, questions, flags):
     partial_conclusion = conclusions
-    remaining_questions = questions
-    flags = set()
-    for flag in remaining_questions:
-        if not can_ask_this_question(remaining_questions[flag]['required'], flags):
+    remaining_questions = dict()
+    current_flags = flags
+    for flag in questions:
+        if not can_ask_this_question(questions[flag]['required'], flags):
+            remaining_questions[flag] = questions[flag]
             continue
-        res = input(remaining_questions[flag]['text'] + " ")
+        res = input(questions[flag]['text'] + " ")
         include = res == 'y'
-        flags.add(flag) if include else flags
+        current_flags.add(flag) if include else current_flags
         partial_conclusion = list(filter(lambda x: not (
             (flag in x['flags']) ^ include), partial_conclusion))
         remaining_conclusions = len(partial_conclusion)
@@ -35,11 +36,12 @@ def ask(conclusions, questions):
             return "Not found"
         elif remaining_conclusions == 1:
             return partial_conclusion[0]['name']
+    return ask(partial_conclusion, remaining_questions, current_flags)
 
 
 def start():
     conclusions, questions = get_knowledge_base()
-    res = ask(conclusions, questions)
+    res = ask(conclusions, questions, set())
     print("res:" + res)
 
 
