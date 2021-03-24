@@ -22,7 +22,7 @@ def can_ask_this_question(required_flags, flags):
 def ask(conclusions, questions, flags):
     layout = [[sg.Text("Press START to start", key='question', size=(50, 2))], [
         sg.Button("YES"), sg.Button("NO")], [sg.Text("Result", key='result', size=(50, 2))]]
-    window = sg.Window(title="Demo", layout=layout,
+    window = sg.Window(title="MiRea", layout=layout,
                        margins=(100, 100), finalize=True)
     partial_conclusion = conclusions
     remaining_questions = dict()
@@ -38,11 +38,15 @@ def ask(conclusions, questions, flags):
             current_flags.add(flag) if include else current_flags
             partial_conclusion = list(filter(lambda x: not (
                 (flag in x['flags']) ^ include), partial_conclusion))
-            remaining_conclusions = len(partial_conclusion)
-            if remaining_conclusions == 0:
-                return "Not found"
-            elif remaining_conclusions == 1:
-                return partial_conclusion[0]['name']
+            pcl = len(partial_conclusion)
+            result = partial_conclusion[0]['name'] if pcl == 1 else "Not found"
+            if pcl <= 1:
+                window['result'].update(result)
+                event, _ = window.Read()
+                while not event == sg.WIN_CLOSED:
+                    event, _ = window.Read()
+                window.Close()
+                return
 
 
 def start():
