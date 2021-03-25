@@ -52,7 +52,6 @@ def ask(conclusions, questions, flags):
 def start():
     conclusions, questions = get_knowledge_base()
     res = ask(conclusions, questions, set())
-    print("res:" + res)
 
 
 if __name__ == '__main__':
