@@ -1,10 +1,298 @@
 [
-    {
-        "text": "It's a person?",
-        "flag": "person"
-    },
-    {
-        "text": "It's real?",
-        "flag": "real"
-    }
+  {
+    "text": "It's a person?",
+    "flag": "person",
+    "required": []
+  },
+  {
+    "text": "It's real?",
+    "flag": "real",
+    "required": ["person"]
+  },
+  {
+    "text": "It's alive?",
+    "flag": "alive",
+    "required": ["person"]
+  },
+  {
+    "text": "It's a male?",
+    "flag": "male",
+    "required": ["person"]
+  },
+  {
+    "text": "It's romanian?",
+    "flag": "romanian",
+    "required": ["person", "real"]
+  },
+  {
+    "text": "It's a writer?",
+    "flag": "writer",
+    "required": ["person", "real"]
+  },
+  {
+    "text": "Has brown hair?",
+    "flag": "brown hair",
+    "required": ["person"]
+  },
+  {
+    "text": "Is born in Botosani?",
+    "flag": "Botosani",
+    "required": ["person", "real", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Humulesti?",
+    "flag": "Humulesti",
+    "required": ["person", "real", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Haimanale?",
+    "flag": "Haimanale",
+    "required": ["person", "real", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Bucuresti?",
+    "flag": "Bucuresti",
+    "required": ["person", "real", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Ivesti?",
+    "flag": "Ivesti",
+    "required": ["person", "real", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Barlad?",
+    "flag": "Barlad",
+    "required": ["person", "real", "romanian", "writer"]
+  },
+  {
+    "text": "Is born in Praga?",
+    "flag": "Praga",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is born in Edinburgh?",
+    "flag": "Edinburgh",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is born in Maine?",
+    "flag": "Maine",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is born in Torquay?",
+    "flag": "Torquay",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is born in Steventon?",
+    "flag": "Steventon",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is born in Yate?",
+    "flag": "Yate",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is born in Kensington?",
+    "flag": "Kensington",
+    "required": ["person", "real", "writer"]
+  },
+  {
+    "text": "Is it an actor?",
+    "flag": "actor",
+    "required": ["person", "real"]
+  },
+  { "text": "Has dark hair?", "flag": "dark hair", "required": ["person"] },
+  {
+    "text": "Is born in Ramnicu Valcea?",
+    "flag": "Ramnicu Valcea",
+    "required": ["person", "real", "romanian", "actor"]
+  },
+  {
+    "text": "Is born in Techirghiol?",
+    "flag": "Techirghiol",
+    "required": ["person", "real", "romanian", "actor"]
+  },
+  {
+    "text": "Is born in Targu Jiu?",
+    "flag": "Targu Jiu",
+    "required": ["person", "real", "romanian", "actor"]
+  },
+  {
+    "text": "Is born in New York?",
+    "flag": "New York",
+    "required": ["person", "real", "actor"]
+  },
+  {
+    "text": "Is born in London?",
+    "flag": "London",
+    "required": ["person", "real", "actor"]
+  },
+  {
+    "text": "Is born in Paris?",
+    "flag": "Paris",
+    "required": ["person", "real", "actor"]
+  },
+  {
+    "text": "Is born in Scottsdale?",
+    "flag": "Scottsdale",
+    "required": ["person", "real", "actor"]
+  },
+  {
+    "text": "Is born in Paris?",
+    "flag": "Paris",
+    "required": ["person", "real", "actor"]
+  },
+  {
+    "text": "Is it a superhero?",
+    "flag": "superhero",
+    "required": ["person"]
+  },
+  {
+    "text": "Is it born in Gotham?",
+    "flag": "Gotham",
+    "required": ["person", "superhero"]
+  },
+  {
+    "text": "Is it born on Krypton?",
+    "flag": "Krypton",
+    "required": ["person", "superhero"]
+  },
+  {
+    "text": "Is it born in Star City?",
+    "flag": "Star City",
+    "required": ["person", "superhero"]
+  },
+  {
+    "text": "Is it born in Central City?",
+    "flag": "Central City",
+    "required": ["person", "superhero"]
+  },
+  {
+    "text": "Is it a villain?",
+    "flag": "villain",
+    "required": ["person"]
+  },
+  {
+    "text": "Is it born on Titan?",
+    "flag": "Titan",
+    "required": ["person", "villain"]
+  },
+  {
+    "text": "Is it born on Naboo?",
+    "flag": "Naboo",
+    "required": ["person", "villain"]
+  },
+  {
+    "text": "Is it born in Asgard",
+    "flag": "Asgard",
+    "required": ["person", "superhero"]
+  },
+  {
+    "text": "Is it born in Jotunheim",
+    "flag": "Jotunheim",
+    "required": ["person", "villain"]
+  },
+  {
+    "text": "Is it born in Tatooine",
+    "flag": "Tatooine",
+    "required": ["person", "villain"]
+  },
+  {
+    "text": "Is it an object?",
+    "flag": "object",
+    "required": []
+  },
+  {
+    "text": "Is it made from wood?",
+    "flag": "wood",
+    "required": ["object"]
+  },
+  {
+    "text": "Is it made from plastic?",
+    "flag": "plastic",
+    "required": ["object"]
+  },
+  {
+    "text": "Is it made from metal?",
+    "flag": "metal",
+    "required": ["object"]
+  },
+  {
+    "text": "Is it made from leather?",
+    "flag": "leather",
+    "required": ["object"]
+  },
+  {
+    "text": "Is it made from glass?",
+    "flag": "glass",
+    "required": ["object"]
+  },
+  {
+    "text": "Has it four legs?",
+    "flag": "four legs",
+    "required": ["object"]
+  },
+  {
+    "text": "Is it round?",
+    "flag": "round",
+    "required": ["object", "leather"]
+  },
+  {
+    "text": "Can you eat on it?",
+    "flag": "eat",
+    "required": ["object"]
+  },
+  {
+    "text": "Can you sit on it?",
+    "flag": "sit",
+    "required": ["object"]
+  },
+  {
+    "text": "Can you store a lot of objects in it?",
+    "flag": "store",
+    "required": ["object"]
+  },
+  {
+    "text": "Can you drink from it?",
+    "flag": "drink",
+    "required": ["object"]
+  },
+  {
+    "text": "Can it fit in your pocket?",
+    "flag": "pocket",
+    "required": ["object"]
+  },
+  {
+    "text": "Can you communicate with others using it?",
+    "flag": "communicate",
+    "required": ["object", "metal", "plastic", "pocket"]
+  },
+  {
+    "text": "Can it carry a lot of papers?",
+    "flag": "carry papers",
+    "required": ["object", "leather", "pocket"]
+  },
+  {
+    "text": "Can you brush your hair with it?",
+    "flag": "hair",
+    "required": ["object", "plastic", "pocket"]
+  },
+  {
+    "text": "Can you kill someone with it?",
+    "flag": "kill",
+    "required": ["object", "metal", "pocket"]
+  },
+  {
+    "text": "Does it help you see better?",
+    "flag": "see",
+    "required": ["object", "glass", "pocket"]
+  },
+  {
+    "text": "Does it keep you warm?",
+    "flag": "warm",
+    "required": ["object", "leather"]
+  }
 ]

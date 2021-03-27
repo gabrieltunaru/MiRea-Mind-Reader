@@ -1,10 +1,267 @@
 [
-    {
-        "name": "Mihai Eminescu",
-        "flags": ["real", "person"]
-    },
-    {
-        "name": "Ion Creanga",
-        "flags": ["person"]
-    }
+  {
+    "name": "Mihai Eminescu",
+    "flags": [
+      "Botosani",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Ion Creanga",
+    "flags": [
+      "Humulesti",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Ion Luca Caragiale",
+    "flags": [
+      "Haimanale",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Mircea Cartarescu",
+    "flags": [
+      "Bucuresti",
+      "brown hair",
+      "writer",
+      "romanian",
+      "male",
+      "alive",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Hortensia Papadat-Bengescu",
+    "flags": ["Ivesti", "brown hair", "writer", "romanian", "real", "person"]
+  },
+  {
+    "name": "Elena Farago",
+    "flags": ["Barlad", "brown hair", "writer", "romanian", "real", "person"]
+  },
+  {
+    "name": "Franz Kafka",
+    "flags": ["Praga", "brown hair", "writer", "male", "real", "person"]
+  },
+  {
+    "name": "Arthur Conan Doyle",
+    "flags": ["Edinburgh", "brown hair", "writer", "male", "real", "person"]
+  },
+  {
+    "name": "Stephen King",
+    "flags": [
+      "Maine",
+      "brown hair",
+      "writer",
+      "male",
+      "alive",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Agatha Christie",
+    "flags": ["Torquay", "brown hair", "writer", "real", "person"]
+  },
+  {
+    "name": "Jane Austen",
+    "flags": ["Steventon", "dark hair", "writer", "real", "person"]
+  },
+  {
+    "name": "JK Rowling",
+    "flags": ["Yate", "brown hair", "writer", "alive", "real", "person"]
+  },
+  {
+    "name": "Virginia Woolf",
+    "flags": ["Kensington", "dark hair", "writer", "real", "person"]
+  },
+  {
+    "name": "Dem Radulescu",
+    "flags": [
+      "Ramnicu Valcea",
+      "dark hair",
+      "actor",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Jean Constantin",
+    "flags": [
+      "Techirghiol",
+      "dark hair",
+      "actor",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Sergiu Nicolaescu",
+    "flags": [
+      "Targu Jiu",
+      "brown hair",
+      "actor",
+      "romanian",
+      "male",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Tom Holland",
+    "flags": [
+      "Kingston-upon-Thames",
+      "brown hair",
+      "actor",
+      "male",
+      "alive",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "flags": [
+      "New York",
+      "brown hair",
+      "actor",
+      "male",
+      "alive",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Tom Hiddleston",
+    "flags": [
+      "London",
+      "brown hair",
+      "actor",
+      "male",
+      "alive",
+      "real",
+      "person"
+    ]
+  },
+  {
+    "name": "Emma Watson",
+    "flags": ["Paris", "brown hair", "actor", "alive", "real", "person"]
+  },
+  {
+    "name": "Emma Stone",
+    "flags": ["Scottsdale", "brown hair", "actor", "alive", "real", "person"]
+  },
+  {
+    "name": "Emily Ratajkowski",
+    "flags": ["London", "dark hair", "actor", "alive", "real", "person"]
+  },
+  {
+    "name": "Batman",
+    "flags": ["Gotham", "dark hair", "superhero", "male", "alive", "person"]
+  },
+  {
+    "name": "Superman",
+    "flags": ["Krypton", "dark hair", "superhero", "male", "alive", "person"]
+  },
+  {
+    "name": "Green Arrow",
+    "flags": ["Star City", "superhero", "male", "alive", "person"]
+  },
+  {
+    "name": "The Flash",
+    "flags": ["Central City", "superhero", "male", "alive", "person"]
+  },
+  {
+    "name": "Thor",
+    "flags": ["Asgard", "superhero", "male", "alive", "person"]
+  },
+  {
+    "name": "Thanos",
+    "flags": ["Titan", "villain", "male", "person"]
+  },
+  {
+    "name": "Darth Sidious",
+    "flags": ["Naboo", "brown hair", "villain", "male", "person"]
+  },
+  {
+    "name": "Darth Vader",
+    "flags": ["Tatooine", "brown hair", "villain", "male", "person"]
+  },
+  {
+    "name": "Loki",
+    "flags": ["Jotunheim", "dark hair", "villain", "male", "alive", "person"]
+  },
+  {
+    "name": "Dulap",
+    "flags": ["store", "wood", "object"]
+  },
+  {
+    "name": "Masa din lemn",
+    "flags": ["eat", "four legs", "wood", "object"]
+  },
+  {
+    "name": "Masa din plastic",
+    "flags": ["eat", "four legs", "plastic", "object"]
+  },
+  {
+    "name": "Scaun din lemn",
+    "flags": ["sit", "four legs", "wood", "object"]
+  },
+  {
+    "name": "Scaun din plastic",
+    "flags": ["sit", "four legs", "plastic", "object"]
+  },
+  {
+    "name": "Pahar",
+    "flags": ["drink", "glass", "object"]
+  },
+  {
+    "name": "Telefon",
+    "flags": ["communicate", "pocket", "glass", "metal", "plastic", "object"]
+  },
+  {
+    "name": "Portofel",
+    "flags": ["carry papers", "pocket", "leather", "object"]
+  },
+  {
+    "name": "Cutit",
+    "flags": ["kill", "pocket", "metal", "object"]
+  },
+  {
+    "name": "Ochelari",
+    "flags": ["see", "pocket", "plastic", "glass", "object"]
+  },
+  {
+    "name": "Haina",
+    "flags": ["warm", "leather", "object"]
+  },
+  {
+    "name": "Pieptan",
+    "flags": ["hair", "pocket", "plastic", "object"]
+  },
+  {
+    "name": "Minge",
+    "flags": ["round", "leather", "plastic", "object"]
+  }
 ]
